@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Oldli</Authors>
+    <Version>1.0.0</Version>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <LangVersion>7.3</LangVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <!--设置打包路径-->
+    <PackageOutputPath>$(SolutionDir)\_packages</PackageOutputPath>
+    <Company>Oldli</Company>
+    <Copyright>Oldli</Copyright>
+    <PackageProjectUrl>https://github.com/iamoldli/HuaWei.IoT.NorthApi.Sdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/iamoldli/HuaWei.IoT.NorthApi.Sdk</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+</Project>
