@@ -713,7 +713,7 @@ namespace HuaWei.IoT.NorthApi.Sdk
                 model = new CommandQueryModel();
 
             var urlBuilder = new StringBuilder(_urls.CommandQuery);
-            urlBuilder.AppendFormat("?pageNo={0}&pageSize={1}", model.PageNo, model.PageSize);
+            urlBuilder.AppendFormat("?pageNo={0}&pageSize={1}&", model.PageNo, model.PageSize);
             if (model.DeviceId.NotNull())
             {
                 urlBuilder.AppendFormat("deviceId={0}&", model.DeviceId);
